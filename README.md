@@ -33,7 +33,7 @@ A full-featured blog application where users can create, edit, delete, and brows
 - JWT_SECRET=your_jwt_secret
 
 
- ##Features
+ ## Features
 -🔐 Authentication – Secure login & register system using JWT
 
 -📝 Create Post – Users can write and publish posts with categories
@@ -51,18 +51,29 @@ A full-featured blog application where users can create, edit, delete, and brows
 -🔍 Single Post Page – Detailed view with edit/delete options (if owner)
 
 
-##Vs code file Structure
+## Vs code file Structure pictures
 ![image](https://github.com/user-attachments/assets/1ae5ceea-9f8d-4cc6-9bdc-e3f7910cbf1f)
 ![image](https://github.com/user-attachments/assets/b2b73c2b-1e4f-4325-9251-73cf3c49663d)
 
-##Installation steps
+## Installation steps
+
+ 1 Clone the Repository
+
+git clone https://github.com/shalu1529/My-blog-post.git
+cd Server
+
+2️ Install Dependencies
+
+npm install
+
+3️ Set the Environment Variables (.env)
+
+4️ Run the Script
+
+node server.js
 
 
 
-
-##How to run:
--cd server && npm install && npm run dev
--cd client && npm install && node Server.js
 
 
 
