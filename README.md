@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📝 Full Stack Blog App
 
-## Getting Started
+A full-featured blog application where users can create, edit, delete, and browse posts with category filtering and pagination. Authentication ensures only authorized users can manage their own posts.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+backend-link:-https://blog-co8w.onrender.com/
+frontend-link:-https://blog-co8w.onrender.com/
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+**Frontend:**
+- Next.js (App Router)
+- Tailwind CSS
+- React Icons
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Backend:**
+- Node.js
+- Express.js
+- MongoDB + Mongoose
+- Cookie-parser
+- CORS
+- JSON Web Token (JWT)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 .env.example
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Backend (`server/.env`)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+PORT=5000 MONGO_URI=your_mongodb_connection_string JWT_SECRET=your_jwt_secret
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+ Features
+-🔐 Authentication – Secure login & register system using JWT
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-📝 Create Post – Users can write and publish posts with categories
+
+-✏️ Edit Post – Authenticated users can update their own posts
+
+-🗑️ Delete Post – Authenticated users can delete only their posts
+
+-🗂️ Category Filter – Filter posts based on categories
+
+-📃 Pagination – Navigate through posts page by page
+
+-👤 Dashboard – Shows logged-in user's own posts only
+
+-🔍 Single Post Page – Detailed view with edit/delete options (if owner)
+
+
+Vs code file Structure
+![image](https://github.com/user-attachments/assets/1ae5ceea-9f8d-4cc6-9bdc-e3f7910cbf1f)
+![image](https://github.com/user-attachments/assets/b2b73c2b-1e4f-4325-9251-73cf3c49663d)
+
+
+
+How to run:
+cd server && npm install && npm run dev
+cd client && npm install && node Server.js
+
+
+
+
