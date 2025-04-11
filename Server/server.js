@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: 'https://blog-co8w.onrender.com/',
+  origin: 'https://blog-co8w.onrender.com',
   credentials: true
 }));
 app.use(express.json());
